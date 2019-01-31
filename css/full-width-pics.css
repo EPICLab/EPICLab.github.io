@@ -22,6 +22,11 @@ body {
   -o-background-size: cover;
 }
 
+.logo {
+  position: fixed;
+  left: 65%;
+}
+
 .paper {
   display: flex;
   align-items: center;
