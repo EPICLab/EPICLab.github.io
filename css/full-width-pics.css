@@ -21,3 +21,35 @@ body {
   background-size: cover;
   -o-background-size: cover;
 }
+
+.paper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.paper .title {
+  flex: 0 1 100%;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.paper .title img {
+  height: 14px;
+  width: auto;
+  padding: 0 3px;
+}
+
+.paper .author {
+  flex: 0 1 100%;
+  font-size: 16px;
+}
+
+.paper .venue {
+  flex: 0 1 100%;
+  font-size: 16px;
+  font-style: italic;
+}
