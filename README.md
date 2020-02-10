@@ -1,2 +1,2 @@
-# SarmaResearch.github.io
-Sarma Lab Webpage
+# EPICLab.github.io
+Research lab website for EPICLab at Oregon State University, led by Dr. Anita Sarma.
