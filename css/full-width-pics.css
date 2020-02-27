@@ -58,3 +58,13 @@ body {
   font-size: 16px;
   font-style: italic;
 }
+
+.container{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.name-box{
+  display: flex;
+  flex-direction: column;
+}
