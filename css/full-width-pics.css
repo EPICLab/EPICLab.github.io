@@ -68,3 +68,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.profileimg{
+  width:auto;
+  height:120px;
+  margin-right:20px;
+}
