@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
  */
 
-body {
+ body {
   padding-top: 54px;
 }
 
@@ -64,13 +64,177 @@ body {
   justify-content: flex-start;
 }
 
-.name-box{
+/*.name-box{
   display: flex;
   flex-direction: column;
-}
+}*/
 
 .profileimg{
-  width:auto;
-  height:120px;
+  width:262px;
+  height:262px;
   margin-right:20px;
 }
+
+.article{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.article .title {
+  flex: 0 1 100%;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.article .title #popup{
+  flex: 0 1 100%;
+  font-weight: bold;
+  font-size: 18px;
+  color:white;
+  
+}
+
+.article .title:hover #popup{
+  flex: 0 1 100%;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.article .title:focus #popup{
+  flex: 0 1 100%;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.page-content{
+  min-height: calc(100vh - 70px);
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #343a40;
+  height: 56px;
+}
+
+.footer-container{
+  padding-left: 20px;
+}
+
+.footer-text{
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+/********* People Page CSS ***********/
+
+.faculty-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.grad-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.undergrad-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.alumni-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.people-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: none;
+}
+
+.alumni-container{
+  font-size: 16px; 
+  font-weight: bold; 
+  line-height: 1.5;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: none;
+}
+
+.people-name{
+  font-size: 12px; 
+  font-weight: bold; 
+  line-height: 1.5;
+  color: black;
+}
+
+.alumni-position{
+  font-size: 16px; 
+  font-weight: 400;
+}
+
+.people-position{
+  font-size: 16px; 
+  font-weight: 400; 
+  line-height: 1.5;
+  color: black;
+}
+
+.site-link{
+  font-size: 1rem; 
+  font-weight: bold; 
+  line-height: 1.5;
+  color: black;
+}
+
+.name-box{
+  padding-top: 5px;
+}
+
+.name-box .site-link #popup{
+  font-weight: bold;
+  font-size: 18px;
+  color:white;
+}
+
+.name-box .site-link:hover #popup{
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.name-box .site-link:hover{
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;  
+  line-height: 1.5;
+}
+
+.people-page-headers{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: none;
+  padding-top: 20px;
+}
+  
