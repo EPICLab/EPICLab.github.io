@@ -73,7 +73,11 @@
   width:262px;
   height:262px;
   margin-right:20px;
+  /*height: 100%;
+  padding-top: 100%; 1:1 Aspect Ratio
+  position: relative;*/
 }
+
 
 .article{
   display: flex;
@@ -143,21 +147,9 @@
   justify-content: flex-start;
 }
 
-.grad-container{
+.student-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.undergrad-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.alumni-container{
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -172,6 +164,9 @@
 }
 
 .alumni-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   font-size: 16px; 
   font-weight: bold; 
   line-height: 1.5;
@@ -234,7 +229,7 @@
 .people-page-headers{
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: none;
+  padding-bottom: 20px;
   padding-top: 20px;
 }
   
