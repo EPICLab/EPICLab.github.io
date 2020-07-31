@@ -81,7 +81,8 @@
 
 .article{
   display: flex;
-  align-items: center;
+  flex-flow: column wrap;
+  align-items: left;
   flex-wrap: wrap;
   padding-top: 10px;
   padding-bottom: 10px;
