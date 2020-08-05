@@ -139,6 +139,41 @@
   font-family: sans-serif;
 }
 
+
+
+/****** Home Page Split Screen ********/
+
+.split{
+  display: flex;
+}
+
+.split-left{
+  width: 50%;
+  display: inline;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  border-style: none solid none none;
+  border-color: #343a40;
+  border-width: 3px;
+}
+
+.split-right{
+  width: 50%;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+
+
 /********* People Page CSS ***********/
 
 .curr-member-container{
