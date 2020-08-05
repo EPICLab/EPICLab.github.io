@@ -265,7 +265,7 @@ ul.timeline > li:before{
   color: black;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-top: none;
 }
 
@@ -277,6 +277,11 @@ ul.timeline > li:before{
 }
 
 .alumni-position{
+  font-size: 16px; 
+  font-weight: 400;
+}
+
+.alumni-thesis{
   font-size: 16px; 
   font-weight: 400;
 }
