@@ -145,7 +145,8 @@
 
 .split{
   display: flex;
-  height: 650px;
+  height: 650px; 
+  overflow: hidden
 }
 
 .split-left{
@@ -166,7 +167,6 @@
   padding-right: 50px;
   padding-left: 50px;
   padding-bottom: 50px;
-  overflow: hidden;
 }
 
 
