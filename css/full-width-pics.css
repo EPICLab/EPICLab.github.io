@@ -139,6 +139,104 @@
   font-family: sans-serif;
 }
 
+
+
+/****** Home Page Split Screen ********/
+
+.split{
+  display: flex;
+  height: 650px; 
+  overflow: hidden
+}
+
+.split-left{
+  width: 50%;
+  display: inline;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  border-style: none;
+  border-color: #343a40;
+  border-width: 3px;
+}
+
+.split-right{
+  width: 50%;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+/****** Home Page News Carousel *******/
+
+/*news header*/
+isteColor{
+    color: #343a40;
+  }
+
+.isteColor:hover{
+    color: #0645AD;
+  }
+
+/*news content*/
+ul.timeline{
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before{
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline > li{
+  margin: 20px 0;
+  padding-left: 30px;
+}
+
+ul.timeline > li:before{
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #343a40;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+/*carousel display*/
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right{
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right{
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left{
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
+
+
 /********* People Page CSS ***********/
 
 .curr-member-container{
@@ -167,7 +265,7 @@
   color: black;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-top: none;
 }
 
@@ -179,6 +277,11 @@
 }
 
 .alumni-position{
+  font-size: 16px; 
+  font-weight: 400;
+}
+
+.alumni-thesis{
   font-size: 16px; 
   font-weight: 400;
 }
