@@ -20,6 +20,7 @@
   background-size: cover;
   background-position: center;
   height: 52.5vh;
+  min-height: 250px;
 }
 
 /*desktop banner*/
@@ -35,9 +36,26 @@
  }
 }
 
+/*mobile logo*/
 .logo {
-  position: fixed;
-  left: 65%;
+  display: block;
+  margin: auto;
+  margin-top: 7vh;
+  width: 20vh;
+  max-width: 250px;
+  min-width: 100px;
+}
+
+/*desktop logo*/
+@media (min-device-height: 824px), (min-device-width: 800px) {
+  .logo {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4vh;
+    left: 65%;
+    width: 250px;
+    height: auto;
+  }
 }
 
 .paper {
