@@ -14,12 +14,25 @@
   }
 }
 
+/*mobile banner*/
 .bg-image-full {
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
+  background: no-repeat;
   background-size: cover;
-  -o-background-size: cover;
+  background-position: center;
+  height: 52.5vh;
+}
+
+/*desktop banner*/
+@media (min-device-height: 824px), (min-device-width: 800px) {
+  .bg-image-full {
+   background: no-repeat center center scroll;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+   height: 650px;
+   width: auto;
+ }
 }
 
 .logo {
@@ -145,7 +158,7 @@
 
 .split{
   display: flex;
-  height: 650px; 
+  height: 100%; 
   overflow: hidden
 }
 
