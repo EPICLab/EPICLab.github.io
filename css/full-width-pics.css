@@ -177,14 +177,25 @@
 .split{
   display: flex;
   height: 100%; 
-  overflow: hidden
+  overflow: hidden;
+}
+
+
+@media (max-device-height: 824px), (max-device-width: 800px) {
+  .split{
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  overflow: hidden;
+  width: 100%;
+  }
 }
 
 .split-left{
   width: 50%;
   display: inline;
   padding-top: 50px;
-  padding-right: 50px;
+  padding-right: 25px;
   padding-left: 50px;
   padding-bottom: 50px;
   border-style: none;
@@ -192,12 +203,31 @@
   border-width: 3px;
 }
 
+@media (max-device-height: 824px), (max-device-width: 800px) {
+  .split-left{
+    order: 1;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-right: 50px;
+    padding-bottom: 20px;
+  }
+}
+
 .split-right{
   width: 50%;
   padding-top: 50px;
   padding-right: 50px;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-bottom: 50px;
+}
+
+@media (max-device-height: 824px), (max-device-width: 800px) {
+  .split-right{
+    order: 2;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 20px;
+  }
 }
 
 
@@ -230,9 +260,22 @@ ul.timeline:before{
   z-index: 400;
 }
 
+@media (max-device-height: 824px), (max-device-width: 800px) {
+  ul.timeline:before{
+    left: 7.5px;
+  }
+}
+
 ul.timeline > li{
   margin: 20px 0;
   padding-left: 30px;
+}
+
+@media (max-device-height: 824px), (max-device-width: 800px) {
+  ul.timeline > li{
+    margin: 5px 0;
+    padding-left: 3px;
+  }
 }
 
 ul.timeline > li:before{
@@ -246,6 +289,12 @@ ul.timeline > li:before{
   width: 20px;
   height: 20px;
   z-index: 400;
+}
+
+@media (max-device-height: 824px), (max-device-width: 800px) {
+  ul.timeline > li:before{
+    left: 0px;
+  }
 }
 
 /*carousel display*/
