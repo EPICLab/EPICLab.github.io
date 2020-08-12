@@ -171,6 +171,9 @@
   font-family: sans-serif;
 }
 
+.hline {
+  border-bottom: 2px solid #384452;
+}
 
 
 /****** Home Page Split Screen ********/
@@ -206,7 +209,7 @@
 
 
 /*mobile display--no split screen*/
-@media (max-height: 824px), (max-width: 800px) {
+@media (max-height: 700px), (max-width: 700px) {
   .split {
   display: flex;
   flex-direction: column;
@@ -224,6 +227,67 @@
     padding-bottom: 20px;
   }
   .split-right {
+    order: 2;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+}
+
+
+
+/****** Research Page Split Screen ********/
+
+/*desktop split screen*/
+.widget {
+  display: flex;
+  height: 100%; 
+  overflow: hidden;
+}
+
+
+/*desktop split left screen*/
+.widget-left {
+  width: 60%;
+  display: inline;
+  padding-top: 50px;
+  padding-right: 25px;
+  padding-left: 11vw;
+  padding-bottom: 50px;
+  border-style: none;
+  border-color: #343a40;
+  border-width: 3px;
+}
+
+/*desktop split right screen*/
+.widget-right {
+  width: 40%;
+  padding-top: 50px;
+  padding-right: 11vw;
+  padding-left: 5vw;
+  padding-bottom: 50px;
+}
+
+
+/*mobile display--no split screen*/
+@media (max-height: 700px), (max-width: 700px) {
+  .widget {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  overflow: hidden;
+  width: 100%;
+  }
+  .widget-left {
+    order: 1;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
+  .widget-right {
     order: 2;
     width: 100%;
     padding-top: 20px;
@@ -410,4 +474,3 @@ ul.timeline > li:before {
   padding-bottom: 20px;
   padding-top: 20px;
 }
-  
