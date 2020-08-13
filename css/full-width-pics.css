@@ -176,6 +176,13 @@
 }
 
 
+:target {
+  display: block;
+  position: relative;
+  top: -345px; /* this is your offset */
+}
+
+
 /****** Home Page Split Screen ********/
 
 /*desktop split screen*/
