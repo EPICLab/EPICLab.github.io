@@ -111,6 +111,24 @@
 }
 
 
+a:link {
+  color: #547599;
+  text-decoration: none;
+  cursor: auto;
+}
+
+a:hover {
+  color: #547599;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+
 .article {
   display: flex;
   flex-flow: column wrap;
@@ -124,9 +142,9 @@
   flex: 0 1 100%;
   font-weight: bold;
   font-size: 18px;
-  color: black;
 }
 
+/*
 .article .title #popup {
   flex: 0 1 100%;
   font-weight: bold;
@@ -148,6 +166,7 @@
   font-size: 18px;
   color: black;
 }
+*/
 
 .page-content {
   min-height: calc(100vh - 70px);
@@ -175,11 +194,17 @@
   border-bottom: 2px solid #384452;
 }
 
-
-:target {
+/*page tags*/
+.people-link:target {
   display: block;
   position: relative;
   top: -345px; /* this is your offset */
+}
+
+.publication-link:target {
+  display: block;
+  position: relative;
+  top: -105px; /* this is your offset */
 }
 
 
@@ -188,7 +213,6 @@
 /*desktop split screen*/
 .split {
   display: flex;
-  height: 100%; 
   overflow: hidden;
 }
 
@@ -257,9 +281,8 @@
 .widget-left {
   width: 60%;
   display: inline;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-right: 25px;
-  padding-left: 11vw;
   padding-bottom: 50px;
   border-style: none;
   border-color: #343a40;
@@ -269,8 +292,7 @@
 /*desktop split right screen*/
 .widget-right {
   width: 40%;
-  padding-top: 50px;
-  padding-right: 11vw;
+  padding-top: 40px;
   padding-left: 5vw;
   padding-bottom: 50px;
 }
@@ -449,13 +471,13 @@ ul.timeline > li:before {
   font-size: 1rem; 
   font-weight: bold; 
   line-height: 1.5;
-  color: black;
 }
 
 .name-box {
   padding-top: 5px;
 }
 
+/*
 .name-box .site-link #popup {
   font-weight: bold;
   font-size: 18px;
@@ -474,6 +496,7 @@ ul.timeline > li:before {
   font-size: 1rem;  
   line-height: 1.5;
 }
+*/
 
 .people-page-headers {
   padding-left: 20px;
