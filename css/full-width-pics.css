@@ -120,6 +120,9 @@ a:link {
 a:hover {
   color: #547599;
   text-decoration: underline;
+}
+
+a:hover, a:active {
   cursor: pointer;
 }
 
@@ -128,6 +131,9 @@ a:visited {
   text-decoration: underline;
 }
 
+.inactive:hover {
+  cursor: auto;
+}
 
 .article {
   display: flex;
