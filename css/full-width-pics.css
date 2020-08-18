@@ -120,11 +120,9 @@ a:link {
 a:hover {
   color: #547599;
   text-decoration: underline;
-}
-
-a:hover, a:active {
   cursor: pointer;
 }
+
 
 a:visited {
   color: #547599;
@@ -338,9 +336,9 @@ isteColor {
     color: #343a40;
   }
 
-.isteColor:hover {
+/*.isteColor:hover {
     color: #0645AD;
-  }
+  }*/
 
 /*news content*/
 ul.timeline {
@@ -504,7 +502,7 @@ ul.timeline > li:before {
 }
 */
 
-.people-page-headers {
+.page-headers {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
