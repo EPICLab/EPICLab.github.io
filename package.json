@@ -1,8 +1,8 @@
 {
-    "title": "Full Width Pics",
-    "name": "startbootstrap-full-width-pics",
-    "version": "4.1.1",
-    "description": "A HTML template featuring sections with full width image backgrounds built with Bootstrap",
+    "title": "EPICLab",
+    "name": "epiclab",
+    "version": "1.0.0",
+    "description": "The End-user centric, Privacy, Inclusion and Cognition laboratory at Oregon State University",
     "keywords": [
         "css",
         "sass",
@@ -11,23 +11,24 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/full-width-pics",
+    "homepage": "https://epiclab.github.io/",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-full-width-pics/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/EPICLab/EPICLab.github.io/issues",
+        "email": "anita.sarma@oregonstate.edu"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "EPICLab",
     "contributors": [
         "David Miller (http://davidmiller.io/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-full-width-pics.git"
+        "url": "https://github.com/EPICLab/EPICLab.github.io.git"
     },
     "dependencies": {
         "bootstrap": "^4.2.1",
-        "jquery": "3.5.1"
+        "jquery": "3.5.1",
+        "luxon": "^1.24.1"
     },
     "devDependencies": {
         "browser-sync": "^2.26.7",
