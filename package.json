@@ -28,7 +28,7 @@
     "dependencies": {
         "bootstrap": "^4.2.1",
         "jquery": "3.5.1",
-        "luxon": "^1.24.1"
+        "luxon": "^1.25.0"
     },
     "devDependencies": {
         "browser-sync": "^2.26.7",
