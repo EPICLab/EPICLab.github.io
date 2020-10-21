@@ -250,7 +250,7 @@ a:visited {
 
 
 /*mobile display--no split screen*/
-@media (max-height: 700px), (max-width: 700px) {
+@media (max-height: 600px), (max-width: 700px) {
   .split {
   display: flex;
   flex-direction: column;
