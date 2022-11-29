@@ -31,7 +31,7 @@
     "dependencies": {
         "bootstrap": "^4.6.2",
         "jquery": "3.6.1",
-        "luxon": "^3.0.4",
+        "luxon": "^3.1.1",
         "popper.js": "^1.16.1"
     },
     "devDependencies": {
