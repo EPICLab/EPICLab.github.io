@@ -30,7 +30,7 @@
     },
     "dependencies": {
         "bootstrap": "^4.6.2",
-        "jquery": "3.6.4",
+        "jquery": "3.7.0",
         "luxon": "^3.3.0",
         "popper.js": "^1.16.1"
     },
