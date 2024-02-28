@@ -1,0 +1,49 @@
+/* Main Color Palette */
+:root {
+    --CrimsonOrange: #c76b2e;
+    --Tapioca: #edb58f; 
+    --BabyBeige: #fff0e0; 
+    --SkinBeige: #fce3ca; 
+    --LightOrange: #fcddbe; 
+    --DarkerOrange: #a4551c;
+    --WarmGray: #7e7e7e;
+    --SoftPink: #f5c3b4;
+    --MutedBlue: #a0c5d8;
+    --SubtleGreen: #518f49;
+}
+
+body {
+    padding-top: 54px;
+}
+
+/* Adjusted styles for tag selection */
+.tag-selection {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tag-btn {
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--CrimsonOrange); /* Use custom color variable */
+}
+
+.tag-btn.active {
+    background-color: var(--SubtleGreen); /* Different color when activated */
+}
+
+.csl-block {
+    display: flex;
+    flex-flow: row wrap; /* Default: Arrange elements horizontally */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+    .csl-block {
+        flex-flow: column wrap; /* Arrange elements vertically on small screens */
+    }
+}

@@ -8,18 +8,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sarma Research Lab</title>
+    <title>EPICLab - Publications</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/full-width-pics.css" rel="stylesheet">
-    <!-- <script src="https://kit.fontawesome.com/ac647077b9.js" crossorigin="anonymous"></script> -->
-    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/publications.css" rel="stylesheet">
+
+    <!-- Favicon -->
+  	<link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  	<link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+
 
   </head>
-
+  
   <body>
 
     <div class="page-content">
@@ -27,14 +30,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="https://epiclab.github.io/">EPICLab</a>
+        <a class="navbar-brand" href="index.html">EPICLab</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="https://epiclab.github.io/">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="people.html">People</a>
@@ -48,15 +51,528 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>	
 
-    <!-- Content section -->
+	<!-- Tag Selection (Experimental) -->
+	<div class="tag-selection">
+		<label>Filter by tags:</label>
+		<button class="tag-btn" data-tag="open-source-software">Open Source Software</button>
+		<button class="tag-btn" data-tag="generative-ai">Generative AI</button>
+		<button class="tag-btn" data-tag="diversity-equity-inclusion">Diversity/Inclusion</button>
+		<button class="tag-btn" data-tag="developer-productivity">Developer Productivity</button>
+		<button class="tag-btn" data-tag="education">Education</button>
+	</div>
+
+
     <!-- Peer Reviewed Publications -->
     <section>
-    <div class="article container" style="padding-top: 0px; padding-left: 0px">
-    <h3 class="page-headers" style="padding-left: 15px; padding-bottom: 0px">Peer Reviewed Publications</h1>
+	<!-- Papers Begin Here -->
+	<div class="article container" style="padding-top: 0px; padding-left: 0px">
+		<h3 class="page-headers" style="padding-left: 15px; padding-bottom: 0px">Peer Reviewed Publications</h1>
 
-    	<table class="article container">
+		<table class="article container" data-tags="generative-ai, education">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/icse-2024">ICSE 2024</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">How Far Are We? The Triumphs and Trials of Generative AI in Learning Software Engineering</a>
+					<span class="author">Rudrajit Choudhuri, Dylan Liu, Igor Steinmacher, Marco Gerosa and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering</i>, 2024.</span>
+					<span>
+						<span><a href="https://doi.org/10.48550/arXiv.2312.11719">DOI</a></span> &middot;
+						<span><a href="publications/icse24-choudhuri.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="generative-ai, developer-productivity">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/icse-2024">ICSE 2024</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">How to Support ML End-User Programmers through a Conversational Agent</a>
+					<span class="author">Emily Garcia, Joao Pimentel, Zixuan Feng, Marco Gerosa, Igor Steinmacher and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering</i>, 2024.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/10.1145/3597503.3608130">DOI</a></span> &middot;
+						<span><a href="publications/icse24-garcia.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="diversity-equity-inclusion, open-source-software">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/chase-2023">CHASE 2023</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">The State of Diversity and Inclusion in Apache: A Pulse Check</a>
+					<span class="author">Zixuan Feng, Mariam Guizani, Marco A. Gerosa and Anita Sarma</span>
+					<span class="venue"><i>International Conference on Cooperative and Human Aspects of Software Engineering</i>, 2023.</span>
+					<span>
+						<span><a href="https://doi.org/10.48550/arXiv.2303.16344">DOI</a></span> &middot;
+						<span><a href="publications/chase23-feng.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="open-source-software, diversity-equity-inclusion">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/icse-2023">ICSE 2023</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Rules of Engagement: Why and How Companies Participate in OSS</a>
+					<span class="author">Mariam Guizani, Aileen Abril Castro-Guzman, Igor Steinmacher and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering</i>, 2023.</span>
+					<span>
+						<span><a href="https://doi.org/10.1109/ICSE48619.2023.00218">DOI</a></span> &middot;
+						<span><a href="publications/icse23-guizani.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+		
+		<table class="article container" data-tags="diversity-equity-inclusion, open-source-software">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/track/icse-2023/icse-2023-SEIS">ICSE-SEIS 2023</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Designing for Cognitive Diversity: Improving the GitHub Experience</a>
+					<span class="author">Italo Santos, João Felipe Pimentel, Igor Wiese, Igor Steinmacher, Marco A. Gerosa and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering, Software Engineering in Society Track</i>, 2023.</span>
+					<span>
+						<span><a href="https://doi.org/10.1109/ICSE-SEIS58686.2023.00007">DOI</a></span> &middot;
+						<span><a href="publications/seis23-santos.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="open-source-software, developer-productivity">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/icse-2023">ICSE 2023</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Do I Belong? Modeling Sense of Virtual Community Among Linux Kernel Contributors</a>
+					<span class="author">Bianca Trinkenreich, Klaas-Jan Stol, Daniel M. German, Marco A. Gerosa, Igor Steinmacher and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering</i>, 2023.</span>
+					<span class="award">🏆 Distinguished Paper Award</a></span>
+					<span>
+						<span><a href="https://doi.org/10.1109/ICSE48619.2023.00038">DOI</a></span> &middot;
+						<span><a href="publications/icse23-trinkenreich.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="developer-productivity, diversity-equity-inclusion">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/track/icse-2023/icse-2023-SEIP">ICSE-SEIP 2023</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">A Model for Understanding and Reducing Developer Burnout</a>
+					<span class="author">Bianca Trinkenreich, Klaas-Jan Stol, Igor Steinmacher, Marco A. Gerosa, Marcelo Lara, Michael Feathers, Nicholas Ross, Kevin Bishop and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering, Software Engineering in Practice Track</i>, 2023.</span>
+					<span>
+						<span><a href="https://doi.org/10.1109/ICSE-SEIP58684.2023.00010">DOI</a></span> &middot;
+						<span><a href="publications/seip23-trinkenreich.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+		
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/esem-2023">ESEIW 2023</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Tag that Issue: Applying API-domain Labels in Issue Tracking Systems</a>
+					<a class="publication-link" id="tag-that-issue"></a>
+					<span class="author">Fabio Santos, Joseph Vargovich, Bianca Trinkenreich, Italo Santos, Jacob Penney, Ricardo Britto, João Felipe Pimentel, Igor Wiese, Igor Steinmacher, Anita Sarma and Marco A. Gerosa</span>
+					<span class="venue"><i>17th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement</i>, 2023.</span>
+					<span>
+						<span><a href="https://doi.org/10.1007/s10664-023-10329-4">DOI</a></span> &middot;
+						<span><a href="publications/eseiw23-santos.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://2022.esec-fse.org/">FSE 2022</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">A case study of implicit mentoring, its prevalence, and impact in Apache</a>
+					<span class="author">Zixuan Feng, Amreeta Chatterjee, Iftekhar Ahmed and Anita Sarma</span>
+					<span class="venue"><i>ACM SIGSOFT International Symposium on Foundations of Software Engineering</i>, 2022.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/abs/10.1145/3540250.3549167">DOI</a></span> &middot;
+						<span><a href="publications/fse22-feng.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://icer2022.acm.org/">ICER 2022</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Inclusivity Bugs in Online Courseware: A Field Study</a>
+					<span class="author">Amreeta Chatterjee, Lara Letaw, Rosalinda Garcia, Doshna Umma Reddy, Rudrajit Choudhuri, Sabyatha Sathish Kumar, Patricia Morreale, Margaret Burnett and Anita Sarma</span>
+					<span class="venue"><i>ACM Conference on International Computing Education Research</i>, 2022.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/abs/10.1145/3501385.3543973">DOI</a></span> &middot;
+						<span><a href="publications/icer22-chatterjee.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/esem-2022">ESEM 2022</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">How to Choose a Task? Mismatches in Perspectives of Newcomers and Existing Contributors</a>
+					<span class="author">Fabio Santos, Bianca Trinkenreich, João Felipe Pimentel, Igor Wiese, Igor Steinmacher, Marco A. Gerosa and Anita Sarma</span>
+					<span class="venue"><i>16th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement</i>, 2022.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/abs/10.1145/3510458.3513009">DOI</a></span> &middot;
+						<span><a href="publications/esem22-santos.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/esem-2022">ICSE-SEIS 2022</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">How to Debug Inclusivity Bugs? A Debugging Process with Information Architecture</a>
+					<span class="author">Mariam Guizani, Igor Steinmacher, Jillian Emard, Abrar Fallatah, Margaret Burnett and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering, Software Engineering in Society Track</i>, 2022.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/abs/10.1145/3510458.3513009">DOI</a></span> &middot;
+						<span><a href="publications/seis22-guizani-3.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/esem-2022">ICSE-SEIS 2022</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Attracting and Retaining OSS contributors with a Maintainer Dashboard</a>
+					<span class="author">Mariam Guizani, Thomas Zimmermann, Denae Ford and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering, Software Engineering in Society Track</i>, 2022.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/abs/10.1145/3510458.3513020">DOI</a></span> &middot;
+						<span><a href="publications/seis22-guizani-2.pdf">PDF</a></span>  
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/esem-2022">ICSE-SEIS 2022</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">A New Approach Towards Ensuring Gender Inclusive SE Job Advertisements</a>
+					<span class="author">Tanjila Kanij, John Grundy, Jennifer McIntosh, Gayatri Aniruddha and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering, Software Engineering in Society Track</i>, 2022.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/abs/10.1145/3510458.3513016">DOI</a></span> &middot;
+						<span><a href="publications/seis22-kanij.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/esem-2022">ICSE-SEIS 2022</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Perceptions of the state of D&I and D&I initiative in the ASF</a>
+					<span class="author">Mariam Guizani, Bianca Trinkenreich, Aileen Abril Castro-Guzman, Igor Steinmacher, Marco Gerosa and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering, Software Engineering in Society Track</i>, 2022.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/abs/10.1145/3510458.3513008">DOI</a></span> &middot;
+						<span><a href="publications/seis22-guizani.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://cacm.acm.org/magazines/2022/4/259421-cognitive-biases-in-software-development/fulltext">CACM 2022</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Cognitive Biases in Software Development</a>
+					<span class="author">Souti Chattopadhyay, Nicholas Nelson, Audrey Au, Natalia Morales, Christopher Sanchez, Rahul Pandita and Anita Sarma</span>
+					<span class="venue"><i>Communications of the ACM</i>, 2022.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/abs/10.1145/3517217">DOI</a></span> &middot;
+						<span><a href="publications/cacm22-chattopadhyay.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>		
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://www.computer.org/csdl/journal/tse/2022/02/09864715/1r1rIbpmxjX">TSE</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Women's Participation in Open Source Software: A Survey of the Literature</a>
+					<span class="author">Bianca Trinkenreich, Igor Wiese, Marco Gerosa, Anita Sarma and Igor Steinmacher</span>
+					<span class="venue"><i>Transactions of Software Engineering and Methodology Journal</i>, IEEE, 2022.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/full/10.1145/3510460">DOI</a></span> &middot;
+						<span><a href="publications/tse22-trinkenreich.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+		
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://www.computer.org/csdl/journal/tse/2022/02/09864715/1r1rIbpmxjX">TSE</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Dominoes: An Interactive Exploratory Data Analysis Tool for Software Relationships</a>
+					<span class="author">Jose Ricardo da Silva Junior, Daniel Prett Campagna, Esteban Clua, Anita Sarma and Leonardo Murta</span>
+					<span class="venue"><i>IEEE Transactions on Software Engineering</i>, IEEE, 2022.</span>
+					<span>
+						<span><a href="https://www.doi.org/10.1109/TSE.2020.2988241">DOI</a></span> &middot;
+						<span><a href="publications/tse22-silva.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+		
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://www.computer.org/csdl/journal/tse/2022/02/09755315/1r1rIbpmxjX">TSE</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">How Gender-biased Tools Shape Newcomer Experiences in OSS Projects</a>
+					<span class="author">Susmita Hema Padala, Christopher Mendez, Felipe Fronchetti, Igor Steinmacher, Zoe Steine-Hanson, Claudia Hilderbrand, Amber Horvath, Charles Hill, Logan Simpson, Margaret Burnett, Marco Gerosa, and Anita Sarma.</span>
+					<span class="venue"><i>IEEE Transactions on Software Engineering</i>, IEEE, 2022.</span>
+					<span>
+						<span><a href="https://doi.org/10.1109/TSE.2020.2984173">DOI</a></span> &middot;
+						<span><a href="publications/tse22-padala.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+		
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://petsymposium.org/2022/">PETs 2022</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">If This Context Then That Concern: Exploring Users' Concerns with IFTTT Applets</a>
+					<span class="author">Mahsa Saeidi, McKenzie Calvert, Audrey Au, Anita Sarma, and Rakesh Bobba</span>
+					<span class="venue"><i>Privacy Enhancing Technologies Symposium (PoPETs)</i>, pages 166-186, 2022.</span>
+					<span>
+						<span><a href="https://doi.org/10.48550/arXiv.2012.12518">DOI</a></span> &middot;
+						<span><a href="publications/pets22-saeidi.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://ieeexplore.ieee.org/xpl/conhome/9825713/proceeding">SANER 2022</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Hits and Misses: Newcomers' ability to identify Skills needed for OSS tasks</a>
+					<span class="author">Italo Santos, Igor Wiese, Igor Steinmacher, Marco A. Gerosa and Anita Sarma</span>
+					<span class="venue"><i> IEEE International Conference on Software Analysis, Evolution and Reengineering</i>, 2022.</span>
+					<span>
+						<span><a href="https://doi.org/10.1109/SANER53432.2022.00032">DOI</a></span> &middot;
+						<span><a href="publications/saner22-santos.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/icse-2021">ICSE 2021</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">AID: An Automated Inclusivity-Bug Detector</a>
+					<span class="author">Amreeta Chatterjee, Mariam Guizani, Catherine Stevens, Jillian Emard, Mary Evelyn May, Margaret Burnett, Iftekhar Ahmed and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering</i>, 2021.</span>
+					<span>
+						<span><a href="https://doi.org/10.1109/ICSE43902.2021.00128">DOI</a></span> &middot;
+						<span><a href="publications/icse21-chatterjee.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/icse-2021">ICSE 2021</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">The Shifting Sands of Motivation: Revisiting What Drives Contributors in Open Source</a>
+					<span class="author">Marco Gerosa, Igor Wiese, Bianca Trinkenreich, Georg Link, Gregorio Robles, Christoph Treude, Igor Steinmacher and Anita Sarma</span>
+					<span class="venue"><i>ACM/IEEE International Conference on Software Engineering</i>, 2021.</span>
+					<span>
+						<span><a href="https://doi.org/10.1109/ICSE43902.2021.00098">DOI</a></span> &middot;
+						<span><a href="publications/icse21-gerosa.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://conf.researchr.org/home/msr-2021">MSR 2021</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">Can I Solve it? Identifying APIs Required to Complete OSS Tasks</a>
+					<span class="author">Fabio Santos, Igor Wiese, Bianca Trinkenreich, Igor Steinmacher, Marco A. Gerosa and Anita Sarma</span>
+					<span class="venue"><i>IEEE/ACM International Conference on Mining Software Repositories</i>, 2021.</span>
+					<span>
+						<span><a href="https://doi.org/10.1109/MSR52588.2021.00047">DOI</a></span> &middot;
+						<span><a href="publications/msr21-santos.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://chi2021.acm.org/">CHI 2021</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">The Long Road Ahead: Ongoing Challenges in Contributing to Large OSS Organizations and What to Do</a>
+					<a class="publication-link" id="long-road-ahead"></a>
+					<span class="author">Mariam Guizani, Amreeta Chatterjee, Bianca Trinkenreich, Mary Evelyn May, Geraldine Noa-Guevara, Liam James Russel, Griselda Cuevas Zambrano, Daniel Izquierdo-Cortazar, Igor Steinmacher, Marco Gerosa and Anita Sarma</span>
+					<span class="venue"><i>ACM Human-Computer Interaction</i>, CSCW2, Article 407, 2021.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/10.1145/3479551">DOI</a></span> &middot;
+						<span><a href="publications/chi21-guizani.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+				<span><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32">TSE</a></span>
+			</td>
+			<td>
+				<div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+					<a class="inactive title">The Pot of Gold at the End of the Rainbow: What is Success for Open Source Contributors?</a>
+					<a class="publication-link" id="pot-of-gold"></a>
+					<span class="author">Bianca Trinkenreich, Mariam Guizani, Igor Wiese, Tayana Conte, Marco Aurelio Gerosa, Anita Sarma and Igor Steinmacher</span>
+					<span class="venue"><i>IEEE Transactions on Software Engineering (TSE)</i>, IEEE, 2021.</span>
+					<span>
+						<span><a href="https://dl.acm.org/doi/abs/10.1109/TSE.2021.3108032">DOI</a></span> &middot;
+						<span><a href="publications/tse-trinkenreich.pdf">PDF</a></span> 
+					</span>
+				</div>
+			</td>
+		</table>
+			  
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+			  <span><a href="https://www.sciencedirect.com/journal/journal-of-information-security-and-applications">JISA 2021</a></span>
+			</td>
+			<td>
+			  <div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+				<a class="inactive title">Being a Mentor in Open Source Projects</a>
+				<span class="author">Igor Steinmacher, Sogol Balali, Bianca Trinkenreich, Mariam Guizani, Daniel Izquierdo-Cortazar, Griselda G. Cuevas Zambrano, Marco Aurelio Gerosa and Anita Sarma </span>
+				<span class="venue"><i>Journal of Internet Services and Applications</i>, JISA, 2021.</span>
+				<span>
+				  <span><a class="inactive"><a href="https://jisajournal.springeropen.com/articles/10.1186/s13174-021-00140-z">DOI</a></span> &middot;
+				  <span><a href="publications/jisa-steinmacher.pdf">PDF</a></span> 
+				</span>
+			  </div>
+		</td>
+		</table>		  
+
+		<table class="article container" data-tags="none">
+			<td width="130" valign="top" style="padding-top: 3px">
+			  <span><a href="https://www.sciencedirect.com/journal/information-and-software-technology">IST</a></span>
+			</td>
+			<td>
+			  <div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+				<a class="inactive title">Visual Resume: Exploring developers' online contributions for hiring</a>
+				<span class="author">Sandeep Kaur Kuttal, Xiaofan Chen, Zhendong Wang, Sogol Balali and Anita Sarma</span>
+				<span class="venue"><i>Information and Software Technology</i>, IEEE, 2021.</span>
+				<span>
+				  <span><a class="inactive"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950584921001002">DOI</a></span> &middot;
+				  <span><a href="publications/ist-kuttal.pdf">PDF</a></span> 
+				</span>
+			  </div>
+		</td>
+		</table>
+		  
+
+    	<table class="article container" data-tags="none">
+    	<td width="130" valign="top" style="padding-top: 3px">
+    	<span><a href="https://www.ieee.org/about/news/2020/index.html">IEEE 2020</a></span></td>
+    	<td>
+	      <div class="csl-block" style="display: flex; flex-flow: column wrap; flex-wrap: wrap">
+	        <a class="inactive title">Gender Inclusivity as a Quality Requirement: Practices and Pitfalls</a>
+	        <span class="author">Mariam Guizani, Lara Letaw, Margaret Burnett, and Anita Sarma</span>
+	        <span class="venue"><i>International Conference on Communications (ICC)</i>, IEEE, 2020.</span>
+			<span>
+  				<span><a class="inactive"><a href="https://www.doi.org/10.1109/MS.2020.3019540">DOI</a></span> &middot;
+				<span><a href="publications/ieee20-guizani.pdf">PDF</a></span> 
+  			</span>
+  			</div>
+		</td>
+		</table>
+    
+        <!--New Stuff Above -->
+
+    	<table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://2020.esec-fse.org/">ESEC/FSE 2020</a></span></td>
     	<td>
@@ -65,13 +581,14 @@
 	        <span class="author"><a href="people.html#mannan">Umme Ayda Mannan</a>, <a href="https://www.ics.uci.edu/~iftekha/">Iftekhar Ahmed</a>, <a href="http://web.engr.oregonstate.edu/~jensenca/OSU_ENGR/index.html">Carlos Jensen</a>, and <a href="people.html#sarma">Anita Sarma</a></span>
 	        <span class="venue"><i>28th Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)</i>, ACM, 2020.</span>
 			<span>
-  				<span><a class="inactive">DOI</a></span>
+  				<span><a class="inactive"><a href="https://dl.acm.org/doi/10.1145/3368089.3409707">DOI</a> </span> &middot;
+				<span><a href="publications/esec20-mannan.pdf">PDF</a></span> 
   			</span>
   			</div>
 		</td>
 		</table>
 
-		<table class="article container">
+		<table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://cscw.acm.org/2020/">CSCW 2020</a></span></td>
     	<td>
@@ -90,7 +607,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://opensym.org">OpenSym 2020</a></span></td>
     	<td>
@@ -111,7 +628,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://conf.researchr.org/home/vlhcc2020">VL/HCC 2020</a></span></td>
     	<td>
@@ -130,7 +647,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://conf.researchr.org/home/icse-2020">ICSE 2020</a></span></td>
     	<td>
@@ -147,7 +664,7 @@
 		</td>
 		</table>
 	      
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://conf.researchr.org/home/icse-2020">ICSE 2020</a></span></td>
     	<td>
@@ -166,7 +683,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://conf.researchr.org/home/icse-2020">ICSE 2020</a></span></td>
     	<td>
@@ -186,7 +703,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://chi2020.acm.org/">CHI 2020</a></span></td>
     	<td>
@@ -204,7 +721,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://link.springer.com/journal/10664/volumes-and-issues/25-1">EMSE</a></span></td>
     	<td>
@@ -220,7 +737,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32">TSE</a></span></td>
     	<td>
@@ -236,7 +753,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32">TSE</a></span></td>
     	<td>
@@ -252,7 +769,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://human-se.github.io/vlhcc2019/">VL/HCC 2019</a></span></td>
     	<td>
@@ -270,7 +787,7 @@
 		</td>
 		</table>    
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://2019.icse-conferences.org/">ICSE 2019</a></span></td>
     	<td>
@@ -289,7 +806,7 @@
 		</td>
 		</table>             
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://cscw.acm.org/2019/">CSCW 2019</a></span></td>
     	<td>
@@ -307,7 +824,7 @@
 		</td>
 		</table>
 	                           
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://link.springer.com/journal/10664/volumes-and-issues/24-5">EMSE</a></span></td>
     	<td>
@@ -324,7 +841,7 @@
 		</td>
 		</table>
 	              
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32">TSE</a></span></td>
     	<td>
@@ -340,7 +857,7 @@
 		</td>
 		</table>   
 	                           
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.sciencedirect.com/journal/journal-of-computer-languages/vol/53/suppl/C">COLA</a></span></td>
     	<td>
@@ -357,7 +874,7 @@
 		</td>
 		</table>
 
-		<table class="article container">
+		<table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://link.springer.com/book/10.1007/978-3-030-00262-6">Handbook of Software Engineering</a></span></td>
     	<td>
@@ -372,7 +889,7 @@
 	      </div>
 		</td>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://conf.researchr.org/home/fse-2018">ESEC/FSE 2018</a></span></td>
     	<td>
@@ -388,7 +905,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://nl4se2018.github.io/">NL4SE 2018</a></span></td>
     	<td>
@@ -404,7 +921,7 @@
 		</td>
 		</table>           
 	                           
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://vlhcc18.github.io/">VL/HCC 2018</a></span></td>
     	<td>
@@ -420,7 +937,7 @@
 		</td>
 		</table> 
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.icse2018.org/">ICSE 2018</a></span></td>
     	<td>
@@ -436,7 +953,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.icse2018.org/">ICSE 2018</a></span></td>
     	<td>
@@ -452,7 +969,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://www.chaseresearch.org/workshops/chase-2018">CHASE 2018</a></span></td>
     	<td>
@@ -470,7 +987,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.sciencedirect.com/journal/information-and-software-technology/vol/103/suppl/C">IST</a></span></td>
     	<td>
@@ -487,7 +1004,7 @@
 		</td>
 		</table>  
 	                           
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://link.springer.com/journal/10606/volumes-and-issues/27-3">CSCW</a></span></td>
     	<td>
@@ -503,7 +1020,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://sravyapolisetty.github.io/ESEM/">ESEM 2017</a></span></td>
     	<td>
@@ -521,7 +1038,7 @@
 		</td>
 		</table>
 
-		<table class="article container">
+		<table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://sites.google.com/site/vlhcc2017/">VL/HCC 2017</a></span></td>
     	<td>
@@ -538,7 +1055,7 @@
 		</td>
 		</table>              
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://sites.google.com/site/vlhcc2017/">VL/HCC 2017</a></span></td>
     	<td>
@@ -555,7 +1072,7 @@
 		</td>
 		</table>    
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://sites.google.com/site/vlhcc2017/">VL/HCC 2017</a></span></td>
     	<td>
@@ -572,7 +1089,7 @@
 		</td>
 		</table> 
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://esec-fse17.uni-paderborn.de/">ESEC/FSE 2017</a></span></td>
     	<td>
@@ -590,7 +1107,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://conferences.computer.org/chase2017/">CHASE 2017</a></span></td>
     	<td>
@@ -606,7 +1123,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://ppig.org/workshops/2017-annual-workshop/">PPIG 2017</a></span></td>
     	<td>
@@ -624,7 +1141,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://ppig.org/workshops/2017-annual-workshop/">PPIG 2017</a></span></td>
     	<td>
@@ -640,7 +1157,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://icsme2017.github.io/">ICSME 2017</a></span></td>
     	<td>
@@ -659,7 +1176,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://chi2017.acm.org/">CHI 2017<a></span></td>
     	<td>
@@ -676,7 +1193,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://chi2017.acm.org/">CHI 2017<a></span></td>
     	<td>
@@ -694,7 +1211,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://www.wsdm-conference.org/2017/">WSDM 2017</a></span></td>
     	<td>
@@ -710,7 +1227,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.conference-publishing.com/list.php?Event=FSEWS16SSE">SSE 2016</a></span></td>
     	<td>
@@ -729,7 +1246,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.cs.ucdavis.edu/fse2016/">FSE 2016</a></span></td>
     	<td>
@@ -746,7 +1263,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.cs.ucdavis.edu/fse2016/">FSE 2016</a></span></td>
     	<td>
@@ -763,7 +1280,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.cs.ucdavis.edu/fse2016/">FSE 2016</a></span></td>
     	<td>
@@ -779,7 +1296,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.cs.ucdavis.edu/fse2016/">FSE 2016</a></span></td>
     	<td>
@@ -797,7 +1314,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://sites.google.com/site/vlhcc2016/">VL/HCC 2016</a></span></td>
     	<td>
@@ -813,7 +1330,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.ics.uci.edu/~icgse2016/2_0cfp.html">ICGSE 2016</a></span></td>
     	<td>
@@ -833,7 +1350,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://mobilesoftconf.org/2016/">MOBILESoft 2016</a></span></td>
     	<td>
@@ -850,7 +1367,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://chi2016.acm.org/wp/">CHI 2016</a></span></td>
     	<td>
@@ -868,7 +1385,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://esem-conferences.org/">ESEM 2015</a></span></td>
     	<td>
@@ -885,7 +1402,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://esec-fse15.dei.polimi.it/">ESEC/FSE 2015</a></span></td>
     	<td>
@@ -902,7 +1419,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://2015.icse-conferences.org/">ICSE 2015</a></span></td>
     	<td>
@@ -918,7 +1435,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.conference-publishing.com/list.php?Event=SANER15FOREWORD">SANER 2015</a></span></td>
     	<td>
@@ -935,7 +1452,7 @@
 		</td>
 		</table>      
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.worldscientific.com/toc/ijseke/25/01">IJSEKE</a></span></td>
     	<td>
@@ -951,7 +1468,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.springeropen.com/collections/SESNP">JISA</a></span></td>
     	<td>
@@ -967,7 +1484,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://opensym.org/os2014/about/">OpenSym 2014</a></span></td>
     	<td>
@@ -983,7 +1500,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://sites.google.com/site/vlhcc2014/home">VL/HCC 2014</a></span></td>
     	<td>
@@ -999,7 +1516,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://ksiresearch.org/seke/seke14main.html">SEKE 2014</a></span></td>
     	<td>
@@ -1015,7 +1532,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://www.chaseresearch.org/workshops/chase2014">CHASE 2014</a></span></td>
     	<td>
@@ -1031,7 +1548,7 @@
 		</td>
 		</table>
 
-		<table class="article container">
+		<table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://2014.icse-conferences.org/">ICSE 2014</a></span></td>
     	<td>
@@ -1049,7 +1566,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://2014.icse-conferences.org/NIER">NIER 2014</a></span></td>
     	<td>
@@ -1065,7 +1582,7 @@
 		</td>
 		</table>
 	                           
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://dl.acm.org/toc/tochi/2014/21/2">TOCHI</a></span></td>
     	<td>
@@ -1082,7 +1599,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://sites.google.com/site/vlhcc2013/home">VL/HCC 2013</a></span></td>
     	<td>
@@ -1098,7 +1615,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://2013.icse-conferences.org/content/program-workshops.html#USER">USER 2013</a></span></td>
     	<td>
@@ -1114,7 +1631,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://2013.icse-conferences.org/">ICSE 2013</a></span></td>
     	<td>
@@ -1130,7 +1647,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://2013.msrconf.org/">MSR 2013</a></span></td>
     	<td>
@@ -1146,7 +1663,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://chi2013.acm.org/">CHI 2013</a></span></td>
     	<td>
@@ -1163,7 +1680,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.sciencedirect.com/journal/information-and-software-technology/vol/55/issue/7">IST</a></span></td>
     	<td>
@@ -1180,7 +1697,7 @@
 		</td>
 		</table>       
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://vlhcc2011.cs.cmu.edu/">VL/HCC 2011</a></span></td>
     	<td>
@@ -1196,7 +1713,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://esem.cpsc.ucalgary.ca/esem2011/esem/index.html">ESEM 2011</a></span></td>
     	<td>
@@ -1215,7 +1732,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://2011.esec-fse.org/">ESEC/FSE 2011</a></span></td>
     	<td>
@@ -1232,7 +1749,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://iseud11.di.uniba.it/">IS-EUD 2011</a></span></td>
     	<td>
@@ -1248,7 +1765,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://www.chaseresearch.org/workshops/chase2011">CHASE 2011</a></span></td>
     	<td>
@@ -1266,7 +1783,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="http://www.chaseresearch.org/workshops/chase2011">CHASE 2011</a></span></td>
     	<td>
@@ -1282,7 +1799,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://dl.acm.org/doi/proceedings/10.1145/1880071">GROUP 2010</a></span></td>
     	<td>
@@ -1298,7 +1815,7 @@
 		</td>
 		</table>
 
-	    <table class="article container">
+	    <table class="article container" data-tags="none">
     	<td width="130" valign="top" style="padding-top: 3px">
     	<span><a href="https://www.springer.com/us/book/9783642102936">CoSe</a></span></td>
     	<td>
@@ -1528,24 +2045,33 @@
       	  </div>
     	</section>
 
-    </h3>
-	</div>
+    	</h3>
+		</div>
 	</section>
-
-
   </div>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <p class="footer-text">Copyright &copy; Anita Sarma 2020</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+    <div class="footer">
+		<div id="copyright"></div>
+		<script>
+		  var currentYear = new Date().getFullYear();
+		  document.getElementById("copyright").innerHTML = "Copyright &copy; " + currentYear + " EPICLab";
+		</script>
+		<div class="contact-info">
+		  <p>Kelley Engineering Center</p>
+		  <p>2500 NW Monroe Ave</p>
+		  <p>Corvallis, OR 97331 USA</p>
+		</div>
+	  </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-UG8ao2jwOWB7/oDdObZc6ItJmwUkR/PfMyt9Qs5AwX7PsnYn1CRKCTWyncPTWvaS" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- Custom Script -->
+	<script src="js/tagFilter.js"></script>
 
   </body>
 

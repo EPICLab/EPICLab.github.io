@@ -1,0 +1,318 @@
+/* Main Color Palette */
+:root {
+    --CrimsonOrange: #c76b2e;
+    --Tapioca: #edb58f; 
+    --BabyBeige: #fff0e0; 
+    --SkinBeige: #fce3ca; 
+    --LightOrange: #fcddbe; 
+    --DarkerOrange: #a4551c;
+    --WarmGray: #7e7e7e;
+    --SoftPink: #f5c3b4;
+    --MutedBlue: #a0c5d8;
+    --SubtleGreen: #cee5cb;
+  }
+
+
+
+/* Banner Styles */
+.banner {
+    background-color: var(--BabyBeige);
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    max-height: 175px; /* Set the maximum height for the logo */
+    width: auto; /* Allow the width to adjust while maintaining aspect ratio */
+}
+
+/* Style for Three Column Layout */
+.split {
+    display: flex;
+}
+
+.svg-icon{
+    margin-bottom: 20px;
+}
+
+.split-left,
+.split-middle,
+.split-right {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.split-left {
+    background-color: var(--LightOrange);
+}
+
+.split-middle {
+    background-color: var(--SkinBeige);
+}
+
+.split-right {
+    background-color: var(--LightOrange);
+}
+
+h2 {
+    font-size: 1.5em;
+    /* Adjust the heading size */
+    font-weight: bold;
+    /* Make the heading bold */
+    margin-bottom: 10px;
+    /* Add consistent margin to the bottom of the header */
+}
+
+.lead {
+    font-size: 1.05em;
+}
+
+
+/* Style for Recent Papers */
+.doi-button, .pdf-button {
+    padding: 10px;
+    background-color: #e77865;
+    color: #ffffff;
+    border: 1px solid #e77865;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Adjust the margin between buttons */
+    margin-top: 15px; /* Adjust the margin-top to increase the distance */
+}
+
+  .pdf-button {
+    background-color: #e79965; /* Customize PDF button color */
+    border: 1px solid #e79965;
+  }
+
+  .publication-container {
+    border: 1px solid var(--CrimsonOrange); /* Border to separate papers */
+    padding: 15px; /* Padding within the container */
+    margin-bottom: 20px; /* Margin between papers */
+  }
+
+  .conference {
+    font-size: 0.8em; /* Adjust the font size for the conference name */
+    font-weight: bold; /* Make the conference name bold */
+    display: block; /* Ensure the conference name is on a new line */
+    margin-bottom: 5px; /* Adjust the margin between conference name and paper title */
+  }
+
+  .author {
+    font-size: 0.9em; /* Adjust the font size for the author names */
+    font-style: italic; /* Make the author names italic */
+  }
+
+
+  
+/* Photo Carousel Styles */
+
+.featured-papers{
+    background-color: var(--BabyBeige); 
+}
+
+.photo-carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 20px auto;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    
+}
+
+.carousel {
+    width: 500px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    flex-wrap: nowrap;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    border: 2px solid var(--Tapioca);
+}
+
+.carousel-item:hover img {
+    filter: brightness(40%);
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-item:hover .carousel-caption {
+    opacity: 1;
+}
+
+.carousel-caption p {
+    font-style: italic;
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.carousel-item:hover .carousel-buttons {
+    display: flex;
+}
+
+.carousel-buttons a {
+    background-color: var(--CrimsonOrange);
+    color: #ffffff !important;
+    border: 1px solid var(--DarkerOrange);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-decoration: none !important;
+}
+
+.carousel-buttons a:hover {
+    background-color: var(--DarkerOrange);
+    border: 1px solid #606060;
+}
+
+.external-carousel-control {
+    background: var(--CrimsonOrange);
+    border: none;
+    font-size: 1.5em;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.external-carousel-control:hover {
+    background: var(--DarkerOrange);
+}
+
+.external-carousel-control:first-child {
+    order: -1;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.carousel-indicators li {
+    background-color: var(--SoftPink);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active {
+    background-color: var(--CrimsonOrange);
+}
+
+/* Media query for smaller viewports */
+@media only screen and (max-width: 768px) {
+    
+    /* Portrait orientation styles */
+    .container-fluid img {
+        width: 100%; /* Make the banner full-width */
+        height: auto; /* Maintain the aspect ratio */
+        max-width: none; /* Remove the max-width constraint */
+    }
+
+    .split {
+        flex-direction: column; /* Stack columns on top of each other */
+    }
+
+    .split-left,
+    .split-middle,
+    .split-right {
+        flex: 1;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .carousel-container {
+        margin-bottom: 40px; /* Adjust margin for smaller screens */
+    }
+
+    .carousel {
+        width: 100%; /* Make the carousel container full-width */
+    }
+
+    .carousel-inner {
+        flex-wrap: wrap; /* Allow carousel items to wrap */
+    }
+
+    /* Landscape orientation styles */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        .split {
+            flex-direction: row; /* Revert to horizontal layout for landscape */
+        }
+
+        .split-left,
+        .split-middle,
+        .split-right {
+            padding: 40px; /* Revert to original padding for landscape */
+        }
+
+        .carousel-container {
+            margin-bottom: 80px; /* Revert to original margin for landscape */
+        }
+
+        .carousel {
+            width: 500px; /* Revert to original carousel width for landscape */
+        }
+
+        .carousel-inner {
+            flex-wrap: nowrap; /* Revert to original flex-wrap for landscape */
+        }
+    }
+}
+
