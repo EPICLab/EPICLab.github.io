@@ -8,102 +8,203 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <script src="vendor/luxon/luxon.min.js"></script>
-  <script type="text/javascript" src="js/timestamp.js"></script>
-
-  <title>EPICLab</title>
+  <title>EPICLab - Research</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/full-width-pics.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/research.css" rel="stylesheet">
 
-</head>
+  <!-- Favicon -->
+  <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
 
-<body>
 
-  <div class="page-content">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">EPICLab</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="people.html">People</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="research.html">Research<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="https://epiclab.github.io/">EPICLab</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="https://epiclab.github.io/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="people.html">People</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="research.html">Research<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="publications.html">Publications</a>
-            </li>
-          </ul>
+  <body id="research-body">
+
+  <!-- Research Section -->
+  <div class="photo-container">
+    <div class="category-container-wrapper">
+      <div class="category-container">
+        <h3>Open Source Software</h3>
+        <div class="photo">
+            <img src="media/research_graphics/do_i_belong.jpg"
+              alt="Do I Belong? Modeling Sense of Virtual Community Among Linux Kernel Contributors">
+            <div class="photo-overlay">
+              <div class="overlay-content">
+                <a href="https://doi.org/10.1109/ICSE48619.2023.00038" target="_blank">DOI</a>
+                <a href="publications/icse23-trinkenreich.pdf" target="_blank">PDF</a>
+                <div class="photo-caption">ICSE 2023 Distinguished Paper Award</div>
+              </div>
+            </div>
+        </div>
+
+        <div class="photo">
+            <img src="media/research_graphics/recommending_tasks.jpg"
+              alt="Recommending Tasks to Newcomers in OSS Projects: How Do Mentors Handle It?">
+            <div class="photo-overlay">
+              <div class="overlay-content">
+                <a href="https://doi.org/10.1145/3412569.3412571" target="_blank">DOI</a>
+                <a href="publications/opensym20-balali.pdf" target="_blank">PDF</a>
+                <div class="photo-caption">OpenSym 2020 Best Paper Award</div>
+              </div>
+            </div>
         </div>
       </div>
-    </nav>
-
-    <!-- Content section -->
-    <section class="py-1">
-      <div class="article container">
-        <div class="card-deck">
-          <div class="card">
-            <img src="media/research/csimage.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a class="title" style="font-weight: 500; font-size: 20px" id="target" href="research/usable-privacy-&-security.html">Usable Privacy & Security<i class="fas fa-link" ID="popup"></i></a>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p class="card-text"><small id="usable-privacy-&-security" class="text-muted"></small>
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="media/research/csimage.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a class="title" style="font-weight: 500; font-size: 20px" id="target" href="research/inclusivity-in-software-engineering.html">Inclusivity in Software Engineering<i class="fas fa-link" ID="popup"></i></a>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p class="card-text"><small id="inclusivity-in-software-engineering" class="text-muted"></small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="media/research/csimage.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <a class="title" style="font-weight: 500; font-size: 20px" id="target" href="research/human-factors-in-development-environments.html">Human Factors in Development Environments<i class="fas fa-link" ID="popup"></i></a>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p class="card-text"><small id="human-factors-in-development-environments" class="text-muted"></small></p>
-            </div>
+    
+    <div class="category-container">
+      <h3>Generative AI</h3>
+      <div class="photo">
+        <img src="media/research_graphics/artifact_analysis.jpg"
+          alt="End-User Programmers and their Communities: An Artifact-based Analysis">
+        <div class="photo-overlay">
+          <div class="overlay-content">
+            <a href="https://doi.org/10.1109/ESEM.2011.23" target="_blank">DOI</a>
+            <a href="publications/esem11-stolee.pdf" target="_blank">PDF</a>
+            <div class="photo-caption">ESEM 2011 Distinguished Paper Award</div>
           </div>
         </div>
       </div>
-    </section>
 
+      <div class="photo">
+        <img src="media/research_graphics/abundance.jpg"
+          alt="Foraging among an Overabundance of Similar Variants">
+        <div class="photo-overlay">
+          <div class="overlay-content">
+            <a href="https://doi.org/10.1145/2858036.2858469" target="_blank">DOI</a>
+            <a href="publications/chi16-ragavan.pdf" target="_blank">PDF</a>
+            <div class="photo-caption">CHI 2016 Best Paper Award</div>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+
+    <div class="category-container">
+      <h3>Diversity, Equity, Inclusion</h3>
+      <div class="photo">
+          <img src="media/research_graphics/merge_conflicts.jpg"
+            alt="Software Practitioner Perspectives on Merge Conflicts and Resolutions">
+          <div class="photo-overlay">
+            <div class="overlay-content">
+              <a href="https://doi.org/10.1109/ICSME.2017.53" target="_blank">DOI</a>
+              <a href="publications/icsme17-mckee.pdf" target="_blank">PDF</a>
+              <div class="photo-caption">ICSME 2017 Distinguished Paper Award</div>
+            </div>
+          </div>
+      </div>
+
+      <div class="photo">
+        <img src="media/research_graphics/global_stage.jpg"
+          alt="Hiring in the Global Stage: Profiles of Online Contributions">
+        <div class="photo-overlay">
+          <div class="overlay-content">
+            <a href="https://doi.org/10.1109/ICGSE.2016.35" target="_blank">DOI</a>
+            <a href="publications/icgse16-sarma.pdf" target="_blank">PDF</a>
+            <div class="photo-caption">ICGSE 2016 Best Paper Award</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-container">
+      <h3>Developer Productivity</h3>
+      <div class="photo">
+        <img src="media/research_graphics/biases.jpg"
+          alt="A Tale from the Trenches: Cognitive Biases and Software Development">
+        <div class="photo-overlay">
+          <div class="overlay-content">
+            <a href="https://doi.org/10.1145/3377811.3380330" target="_blank">DOI</a>
+            <a href="publications/icse20-chattopadhyay.pdf" target="_blank">PDF</a>
+            <div class="photo-caption">ICSE 2020 Distinguished Paper Award</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="media/research_graphics/tradeoffs.jpg"
+          alt="Trade-offs in Continuous Integration: Assurance, Security, and Flexibility">
+        <div class="photo-overlay">
+          <div class="overlay-content">
+            <a href="https://doi.org/10.1145/3106237.3106270" target="_blank">DOI</a>
+            <a href="publications/esecfse17-hilton.pdf" target="_blank">PDF</a>
+            <div class="photo-caption">ESEC/FSE 2017 Distinguished Paper Award</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="category-container">
+      <h3>Education</h3>
+      <div class="photo">
+        <img src="media/research_graphics/how_far_are_we.jpg"
+          alt="How Far Are We? Using Generative AI in Learning Software Engineering">
+        <div class="photo-overlay">
+          <div class="overlay-content">
+            <a href="https://arxiv.org/abs/2312.11719" target="_blank">DOI</a>
+            <a href="publications/icse24-choudhuri.pdf" target="_blank">PDF</a>
+            <div class="photo-caption">ICSE 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <!-- Add more photos here -->
+    </div>
   </div>
+</body>
+
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <p class="footer-text">Copyright &copy; Anita Sarma 2020</p>
+  <div class="footer">
+    <div id="copyright"></div>
+    <script>
+      var currentYear = new Date().getFullYear();
+      document.getElementById("copyright").innerHTML = "Copyright &copy; " + currentYear + " EPICLab";
+    </script>
+    <div class="contact-info">
+      <p>Kelley Engineering Center</p>
+      <p>2500 NW Monroe Ave</p>
+      <p>Corvallis, OR 97331 USA</p>
     </div>
-    <!-- /.container -->
-  </footer>
+  </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript">
-    document.getElementById("usable-privacy-&-security").innerText = timeSince('2020-05-25T09:45');
-    document.getElementById("inclusivity-in-software-engineering").innerText = timeSince('2020-08-14T09:45');
-    document.getElementById("human-factors-in-development-environments").innerText = timeSince('2020-08-12T09:45');
-  </script>
-
-</body>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-UG8ao2jwOWB7/oDdObZc6ItJmwUkR/PfMyt9Qs5AwX7PsnYn1CRKCTWyncPTWvaS" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </html>

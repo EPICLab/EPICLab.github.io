@@ -1,0 +1,202 @@
+:root {
+  --CrimsonOrange: #c76b2e;
+  --Tapioca: #ffc39a; 
+  --BabyBeige: #fff0e0; 
+  --SkinBeige: #fce3ca; 
+  --LightOrange: #fcddbe; 
+  --DarkerOrange: #a4551c;
+  --WarmGray: #7e7e7e;
+  --SoftPink: #f5c3b4;
+  --MutedBlue: #a0c5d8;
+  --SubtleGreen: #cee5cb;
+}
+
+#people-body {
+  background-color: var(--BabyBeige);
+}
+
+body {
+  padding-top: 54px;
+}
+
+.page-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.page-container .page-content {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+@media (max-width: 768px) {
+  .page-container .page-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.page-container .curr-member-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the content */
+}
+
+.page-container .people-container {
+  flex: 0 0 calc(33.333% - 20px); 
+  margin: 10px;
+  text-align: center;
+}
+
+.page-container .curr-member-container:only-child .people-container {
+  order: -1; 
+}
+
+.page-container .curr-member-container:nth-child(2) .people-container:nth-child(1) {
+  order: -2; 
+}
+
+.page-container .curr-member-container:nth-child(2) .people-container:nth-child(2) {
+  order: -1;
+}
+
+.page-container .curr-member-container:nth-child(3) .people-container:nth-child(1) {
+  order: -3;
+}
+
+.page-container .curr-member-container:nth-child(3) .people-container:nth-child(2) {
+  order: -2;
+}
+
+.page-container .curr-member-container:nth-child(3) .people-container:nth-child(3) {
+  order: -1; 
+}
+
+.page-container .name-box {
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-container .name-box a.site-link {
+  font-size: 20px;
+}
+
+.page-container .profileimg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-container .people-link {
+  margin-bottom: 0px;
+}
+
+.page-container .people-position {
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+
+.page-container .page-headers {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.page-container .footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-container .contact-info {
+  text-align: right;
+  color: #999999;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  line-height: 0.7;
+}
+
+.page-container .spacing {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.left-column {
+  float: left;
+}
+
+.right-column {
+  float: right;
+}
+
+.left-column, .right-column {
+  width: 50%;
+}
+
+.split:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.alumni-container {
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.split-left {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px; 
+  padding-left: 40px; 
+}
+
+.split-left, .split-right {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  margin-top: 0px;
+  align-self: flex-start;
+  justify-content: right;
+}
+
+.inactive.alumni-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .page-container .page-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .split-left,
+  .split-right {
+    width: 100% !important;
+    padding: 20px !important;
+    padding-left: 40px !important; 
+    margin-bottom: 10px !important;
+  }
+}

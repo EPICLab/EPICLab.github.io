@@ -1,0 +1,258 @@
+:root {
+  --CrimsonOrange: #c76b2e;
+  --Tapioca: #ffc39a; 
+  --BabyBeige: #fff0e0; 
+  --SkinBeige: #fce3ca; 
+  --LightOrange: #fcddbe; 
+  --DarkerOrange: #a4551c;
+  --WarmGray: #7e7e7e;
+  --SoftPink: #f5c3b4;
+  --MutedBlue: #a0c5d8;
+  --SubtleGreen: #cee5cb;
+}
+
+.navbar {
+  background-color: var(--CrimsonOrange) !important;
+}
+
+/* For Publications Page */
+.page-content{
+  background-color: var(--BabyBeige);
+}
+
+/* Footers */
+.footer {
+    background-color: var(--CrimsonOrange);
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-info {
+    text-align: right;
+    color: #4e2a10;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    line-height: 0.7;
+  }
+  
+  .spacing {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .paper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .paper .title {
+    flex: 0 1 100%;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .paper .title img {
+    height: 14px;
+    width: auto;
+    padding: 0 3px;
+  }
+  
+  .paper .author {
+    flex: 0 1 100%;
+    font-size: 16px;
+  }
+  
+  .paper .venue {
+    flex: 0 1 100%;
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .paper .award {
+    flex: 0 1 100%;
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  
+  .profileimg {
+    width:262px;
+    height:262px;
+    margin-right:50px;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  
+  a:link {
+    color: #547599;
+    text-decoration: none;
+    cursor: auto;
+  }
+  
+  a:hover {
+    color: #547599;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  
+  a:visited {
+    color: #547599;
+    text-decoration: underline;
+  }
+  
+  .inactive:hover {
+    cursor: auto;
+  }
+  
+  .article {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .article .title {
+    flex: 0 1 100%;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .page-content {
+    min-height: calc(100vh - 70px);
+  }
+  
+  .hline {
+    border-bottom: 2px solid #384452;
+  }
+  
+  .people-link:target {
+    display: block;
+    position: relative;
+    top: -345px; 
+  }
+  
+  .publication-link:target {
+    display: block;
+    position: relative;
+    top: -115px; 
+  }
+  
+  /********* People Page CSS ***********/
+  
+  .curr-member-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .people-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: none;
+  }
+  
+  .alumni-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 16px; 
+    font-weight: bold; 
+    line-height: 1.5;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-top: none;
+  }
+  
+  .people-name {
+    font-size: 12px; 
+    font-weight: bold; 
+    line-height: 1.5;
+    color: black;
+  }
+  
+  .alumni-position {
+    font-size: 16px; 
+    font-weight: 400;
+  }
+  
+  .alumni-thesis {
+    font-size: 16px; 
+    font-weight: 400;
+  }
+  
+  .people-position {
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 1.5;
+    color: black;
+  }
+  
+  .site-link {
+    font-size: 1rem; 
+    font-weight: bold; 
+    line-height: 1.5;
+  }
+  
+  .name-box {
+    padding-top: 5px;
+  }
+  
+  .page-headers {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  
+
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      background-color: var(--CrimsonOrange) !important;
+    }
+    
+    .page-content {
+      background-color: var(--BabyBeige);
+    }
+
+    .footer {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text */
+    }
+  
+    .contact-info {
+      text-align: center; /* Center contact info text */
+      margin-top: 20px; /* Add some top margin for separation */
+    }
+    
+    .spacing {
+      margin-top: 30px; 
+      margin-bottom: 30px; 
+    }
+  }
+  
